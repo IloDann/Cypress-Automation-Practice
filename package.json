@@ -6,6 +6,7 @@
   "scripts": {
     "triggerCypressApp-WebDriver-config" : "npx cypress open --env configFile=WebDriver-Uni",
     "triggerAllTestCases" : "npx cypress run",
+    "triggerGreenKart" : "npx cypress run --spec cypress/e2e/GreenKart/sumUpSelectedItems.js ",
     "triggerAllTestCases-dashboard" : "npx cypress run --record --key aee66cd8-fffe-44f6-9dbb-1285c16c3eca",
     "triggerCypressApp-Automation-Store-Test-config" : "npx cypress open --env configFile=Automation-Store-Test",
     "triggerCypressApp-GreenKart-config" : "npx cypress open --env configFile=GreenKart",
