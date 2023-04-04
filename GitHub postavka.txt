@@ -1,0 +1,36 @@
+git config --global user.email githubEmailAddress
+git config --global user.name yourDesiredUsername
+https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf
+https://git-scm.com/docs/gitignore
+
+
+.gitignore Content:
+node_modules
+results
+screenshots
+videos
+mochawesome-report
+package-lock.json
+
+Dodati komentar i commite option click
+
+Napraviti repository u githabu
+
+view>command palet> add from github>
+view > add remote > name repository
+
+git remote -v // da viidimo da li je povezan
+
+
+git remote add origin `github repository url`
+
+sync komanda
+
+git fetch
+
+git pull --tags origin `master`
+
+git pull origin master --allow-unrelated-histories
+
+
+gotovo!
