@@ -1,0 +1,20 @@
+{
+  "name": "practice-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "triggerCypressApp-WebDriver-config" : "npx cypress open --env configFile=WebDriver-Uni",
+    "triggerAllTestCases-dashboard" : "npx cypress run --record --key aee66cd8-fffe-44f6-9dbb-1285c16c3eca",
+    "triggerCypressApp-Automation-Store-Test-config" : "npx cypress open --env configFile=Automation-Store-Test",
+    "triggerCypressApp-GreenKart-config" : "npx cypress open --env configFile=GreenKart",
+    "triggerCypressApp-Automation-Practice-config" : "npx cypress open --env configFile=Automation-Practice",
+    "triggerWebDriver-Uni-config" : "npx cypress run --spec cypress/e2e/WebDriver-Uni --env configFile=WebDriver-Uni"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.9.0"
+  }
+}
