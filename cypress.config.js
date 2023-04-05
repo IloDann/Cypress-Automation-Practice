@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 const fs = require('fs-extra')
 const path = require('path')
+const cucumber = require('cypress-cucumber-preprocessor').default
 
 function getConfigurationByFile(file) {
   const pathToConfigFile = path.resolve('cypress\\config', `${file}.json`)
@@ -14,9 +15,12 @@ function getConfigurationByFile(file) {
 
 
 module.exports = defineConfig({
+  
   projectId: "ktxh9s",
   e2e: {
     setupNodeEvents(on, config) {
+      on('file:preprocessor', cucumber())
+
       const file = config.env.configFile || ''
 
       return getConfigurationByFile(file)
@@ -24,7 +28,8 @@ module.exports = defineConfig({
     // implement node event listeners here
   },
   specPattern : "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
-  baseUrl : "https://rahulshettyacademy.com/AutomationPractice/"
+  baseUrl : "https://rahulshettyacademy.com/AutomationPractice/",
+  experimentalStudio: true
   
 },
 });
